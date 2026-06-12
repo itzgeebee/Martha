@@ -193,6 +193,12 @@ h3 { font-size: clamp(1.8rem, 3vw, 3rem); }
   display: grid;
   gap: 1rem;
 }
+.aaron-photos {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.aaron-photos .image-card img {
+  min-height: 300px;
+}
 .photo-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -241,6 +247,19 @@ h3 { font-size: clamp(1.8rem, 3vw, 3rem); }
   box-shadow: none;
 }
 .dark-page p { color: rgba(255,248,243,.8); }
+.brothers-hero {
+  margin-bottom: 2rem;
+  transform: rotate(-.4deg);
+}
+.brothers-hero img {
+  min-height: 420px;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.brothers-hero figcaption {
+  color: rgba(255,248,243,.72);
+}
 
 .photo-strip {
   margin-top: 2rem;
@@ -311,7 +330,7 @@ h3 { font-size: clamp(1.8rem, 3vw, 3rem); }
   .friend-layout {
     grid-template-columns: 1fr;
   }
-  .cards-three, .photo-strip { grid-template-columns: 1fr; }
+  .cards-three, .photo-strip, .aaron-photos { grid-template-columns: 1fr; }
   .gallery-wall { grid-template-columns: 1fr 1fr; }
   .gallery-wall img { grid-column: span 1 !important; }
   .tall img, .editorial img { min-height: 440px; }
