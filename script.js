@@ -26,8 +26,7 @@ function addAaronPhotos() {
   photoStack.classList.add('aaron-photos');
 
   const extraPhotos = [
-    ['assets/photos/aaron-martha-03.jpg', 'Aaron and Martha at a cafe'],
-    ['assets/photos/aaron-martha-04.jpg', 'Aaron and Martha memory 4']
+    ['assets/photos/aaron-martha-03.jpg', 'Aaron and Martha at a cafe']
   ];
 
   const insertBefore = photoStack.querySelector('img[src="assets/photos/martha-solo-02.jpg"]')?.closest('figure');
